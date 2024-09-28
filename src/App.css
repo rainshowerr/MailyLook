@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0px;
+    font-family: 'Noto Sans KR';
+}
+
+#root {
+    background-color: #fffaf3;
+    /* a는 투명도 */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@media (min-width: 1680px) {
+    .Home {
+        width: 25vw;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1679px) {
+    .Home {
+        width: 35vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .Home {
+        width: 50vw;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .Home {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 479px) {
+    .Home {
+        width: 80vw;
+    }
+}
+
+.footer {
+    font: 13px solid gray;
+    text-align: center;
+}
+
+/* Home */
+
+.Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.Home h2 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.DateInput {
+    background-color: #fffaf3;
+    font-family: 'Noto Sans KR';
+    font-size: 15px;
+    border: none;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.DateInput:focus {
+    outline: none;
+}
+
+.CharacterInput {
+    background-color: white;
+    display: flex;
+}
+
+.CharacterInput .searchInput {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    flex: 1;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.CharacterInput .searchInput:focus {
+    outline: none;
+}
+
+.CharacterInput .searchButton {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.CharacterInput .searchButton img {
+    width: 30px;
+    height: 30px;
+}
+
+.Home .DateInput {
+    margin-right: auto;
+}
+
+.Home .CharacterInput {
+    width: 100%;
+}
+
+/* Detail */
+
+@media (min-width: 1680px) {
+    .Detail {
+        width: 50vw;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1679px) {
+    .Detail {
+        width: 60vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .Detail {
+        width: 70vw;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .Detail {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 479px) {
+    .Detail {
+        width: 90vw;
+    }
+}
+
+.Detail {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Detail .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Detail .back-button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    order: -1;
+}
+
+.Detail .back-button img {
+    width: 20px;
+    height: 20px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Detail .input_wrapper {
+    flex: 1;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.Detail .DateInput {
+    margin-right: 10px;
+}
+
+.Detail .CharacterInput .searchInput {
+    font-size: 15px;
+    width: 210px;
+}
+
+.Detail .CharacterInput .searchButton img {
+    width: 20px;
+    height: 20px;
+}
+
+.CharacterInfo_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.CharacterImage {
+    margin-top: 20px;
+}
+
+.CharacterImage img {
+    width: 150px;
+}
+
+.CharacterInfo_wrapper h4 {
+    font-weight: 500;
+    margin: 0px;
+    margin-bottom: 40px;
+}
+
+.CashItem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.preset {
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PresetButton {
+    display: flex;
+    justify-content: space-between;
+}
+
+.PresetButton button {
+    flex: 1;
+    background-color: #fffaf3;
+    border: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 5px;
+}
+
+.PresetButton .button_1_1 {
+    background-color: #f5f0e9;
+}
+
+.PresetButton .button_2_2 {
+    background-color: #f5f0e9;
+}
+
+.PresetButton .button_3_3 {
+    background-color: #f5f0e9;
+}
+
+.BasePreset {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 28px;
+}
+
+.OtherPreset {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #f5f0e9;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.PresetItemList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cashItem_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    margin: 5px;
+    width: 200px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.cashItem_wrapper img {
+    margin-right: 10px;
+}
+
+.NoCashItem_wrapper {
+    border: 1px solid transparent;
+    margin: 5px;
+    width: 200px;
+    height: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NoCashItem_wrapper .text {
+    color: gray;
+}
+
+.text {
+    word-break: keep-all;
+}
